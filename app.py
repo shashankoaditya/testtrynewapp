@@ -28,7 +28,7 @@ with left:
 
     tcode = st.text_input(
         "Enter SAP T-Code (e.g., VA01)",
-        key="tcode"
+        value=st.session_state.tcode
     )
 
     col1, col2 = st.columns([1, 1])
@@ -64,7 +64,7 @@ with left:
     # -------- RESET BUTTON --------
     with col2:
         if st.button("Reset"):
-            st.session_state["tcode"] = ""
+            st.session_state.tcode = ""
             st.session_state.output = ""
             st.session_state.usage = {}
             st.rerun()
