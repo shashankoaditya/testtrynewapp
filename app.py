@@ -64,7 +64,7 @@ with left:
     # -------- RESET BUTTON --------
     with col2:
         if st.button("Reset"):
-            st.session_state.tcode = ""
+            st.session_state["tcode"] = ""
             st.session_state.output = ""
             st.session_state.usage = {}
             st.rerun()
