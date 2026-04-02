@@ -28,7 +28,7 @@ with left:
 
     tcode = st.text_input(
         "Enter SAP T-Code (e.g., VA01)",
-        value=st.session_state.tcode
+        Key="tcode"
     )
 
     col1, col2 = st.columns([1, 1])
